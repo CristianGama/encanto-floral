@@ -8,8 +8,36 @@ import watch from "../../../assets/images/main/advantages/watch.png";
 import "../../../assets/styles/menu.css";
 
 import { RecommendedProductList } from "../components/RecommendedProductList";
+import { Product } from "../../../types/product";
+
+const Products: Product[] = [
+  { name: "hola", id: 1, imageUrl: header, price: 100 },
+];
+
+const Products2: Product[] = [
+  { name: "tu pai", id: 2, imageUrl: header, price: 50 },
+];
+
+
+type RecommendedProductCategoriesType = {
+  'Novedades': Product[],
+  'Promociones': Product[],
+  'Vendidos': Product[],
+  'Individuales': Product[],
+}
+
+const recommendedProductCategories: RecommendedProductCategoriesType = {
+  'Novedades': Products,
+  'Promociones': Products2,
+  'Vendidos': Products,
+  'Individuales': Products
+}
 
 function Menu() {
+  const [recommendedProducts, setRecommendedProducts] = useState<'Novedades' | 'Promociones' | 'Vendidos' | 'Individuales'>('Novedades');
+
+
+
   return (
     <>
       <div className="main-screen">
@@ -69,12 +97,20 @@ function Menu() {
       </section>
       <section className="main-recommendations-section">
         <article className="main-buttons">
-          <div className="main-button">Novedades</div>
-          <div className="main-button">Promociones</div>
-          <div className="main-button">Más Vendidos</div>
-          <div className="main-button">Flores Individuales</div>
+          <div className="main-button" onClick={(e) => setRecommendedProducts('Novedades')}>
+            Novedades
+          </div>
+          <div className="main-button" onClick={(e) => setRecommendedProducts('Promociones')}>
+            Promociones
+          </div>
+          <div className="main-button" onClick={(e) => setRecommendedProducts('Vendidos')}>
+            Más Vendidos
+          </div>
+          <div className="main-button" onClick={(e) => setRecommendedProducts('Individuales')}>
+            Flores Individuales
+          </div>
         </article>
-        <RecommendedProductList products={[{name:"hola", price:200, id:1, imageUrl:header}]} />
+        <RecommendedProductList products={recommendedProductCategories[recommendedProducts]} />
       </section>
       <section className="main-discover-section">
         <article className="main-discover">

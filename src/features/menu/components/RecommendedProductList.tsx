@@ -6,7 +6,7 @@ export function RecommendedProductList({products}: ProductList) {
     <article className="main-products">
       {
         products.map(({name, price, imageUrl, id}) => (
-          <RecommendedProduct name={name} price={price} imageUrl={imageUrl} id={id} />
+          <RecommendedProduct name={name} price={price} imageUrl={imageUrl} key={id} id={id} />
         ))
       } 
     </article>

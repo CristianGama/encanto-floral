@@ -8,7 +8,7 @@ export function RecommendedProduct({
   imageUrl,
 }: Product) {
   return (
-    <div className="main-product" id={id.toString()}>
+    <div className="main-product">
       <img src={imageUrl} alt="" />
       <p>{name}</p>
       <div className="main-product-details">
