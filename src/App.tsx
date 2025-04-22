@@ -11,8 +11,6 @@ import instagram from "./assets/images/socials logos/Instagram.png";
 import facebook from "./assets/images/socials logos/facebook.png";
 import x_logo from "./assets/images/socials logos/X_logo.jpg";
 
-
-//sdfsdfsfsdfsfsdf
 function App() {
   return (
     <>

@@ -7,6 +7,8 @@ import watch from "../../../assets/images/main/advantages/watch.png";
 
 import "../../../assets/styles/menu.css";
 
+import { RecommendedProductList } from "../components/RecommendedProductList";
+
 function Menu() {
   return (
     <>
@@ -72,32 +74,7 @@ function Menu() {
           <div className="main-button">Más Vendidos</div>
           <div className="main-button">Flores Individuales</div>
         </article>
-        <article className="main-products">
-          <div className="main-product a">
-            <img src={header} alt="" />
-            <p>Ramo de Rosas</p>
-            <div className="main-product-details">
-              <p className="main-product-price">$ 100.00 MXN</p>
-              <p className="main-product-add">Agregar</p>
-            </div>
-          </div>
-          <div className="main-product">
-            <img src={header} alt="" />
-            <p>Ramo de Rosas</p>
-            <div className="main-product-details">
-              <p className="main-product-price">$ 100.00 MXN</p>
-              <p className="main-product-add">Agregar</p>
-            </div>
-          </div>
-          <div className="main-product">
-            <img src={header} alt="" />
-            <p>Ramo de Rosas</p>
-            <div className="main-product-details">
-              <p className="main-product-price">$ 100.00 MXN</p>
-              <p className="main-product-add">Agregar</p>
-            </div>
-          </div>
-        </article>
+        <RecommendedProductList products={[{name:"hola", price:200, id:1, imageUrl:header}]} />
       </section>
       <section className="main-discover-section">
         <article className="main-discover">
