@@ -7,6 +7,11 @@ import logo from "./assets/images/logo.png";
 import user_logo from "./assets/images/user-logo.png";
 import shopping_car_logo from "./assets/images/shopping-car-logo.png";
 
+import instagram from "./assets/images/socials logos/Instagram.png";
+import facebook from "./assets/images/socials logos/facebook.png";
+import x_logo from "./assets/images/socials logos/X_logo.jpg";
+
+
 //sdfsdfsfsdfsfsdf
 function App() {
   return (
@@ -37,6 +42,34 @@ function App() {
       <main>
         <Menu></Menu>
       </main>
+      <footer>
+        <section className="footer-main">
+          <article className="footer-logo">
+            <div className="footer-logo-title">Encanto Floral</div>
+            <div className="footer-logo-subtitle">
+              Llena el aroma de tu hogar
+            </div>
+          </article>
+          <article className="footer-socials">
+            <div className="footer-socials-title">Redes Sociales</div>
+            <div className="footer-socials-icons">
+              <img className="footer-socials-icon" src={facebook} alt="" />
+              <img className="footer-socials-icon" src={x_logo} alt="" />
+              <img className="footer-socials-icon" src={instagram} alt="" />
+            </div>
+          </article>
+          <article className="footer-terms">
+            <div className="footer-terms-title">Información Legal</div>
+            <div className="footer-terms-options">
+              <div className="footer-terms-text">Términos y Condiciones</div>
+              <div className="footer-terms-text">Política de Privacidad</div>
+            </div>
+          </article>
+        </section>
+        <div className="footer-copyright">
+          © 2025 Encanto Floral. Todos los derechos reservados.
+        </div>
+      </footer>
     </>
   );
 }
