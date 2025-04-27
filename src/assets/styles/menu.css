@@ -178,7 +178,7 @@
   margin-top: 40px;
   margin-bottom: 40px;
   padding: 20px;
-  background-color: rgba(179, 0, 96,.3);
+  background-color: rgba(179, 0, 96, 0.3);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
 
@@ -209,7 +209,7 @@
 }
 
 .main-discover {
-  width:20%;
+  width: 20%;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -227,7 +227,7 @@
   margin-bottom: 25px;
 }
 
-.main-discover-img{
+.main-discover-img {
   width: 100%;
   height: 50%;
   margin-bottom: 10px;
@@ -243,7 +243,7 @@
   margin-bottom: 30px;
 }
 
-.main-discover-explorer{
+.main-discover-explorer {
   font-size: 18px;
   border: 1px solid #ffcde8;
   color: white;
@@ -252,9 +252,9 @@
   padding: 5px;
 }
 
-.main-discover-explorer:hover{
-cursor: pointer;
-background-color: #bb3e81;
+.main-discover-explorer:hover {
+  cursor: pointer;
+  background-color: #bb3e81;
 }
 
 .main-contact-section {
@@ -270,10 +270,10 @@ background-color: #bb3e81;
 
 .form-contact {
   justify-self: center;
-  display:grid;
+  display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 20% 20% 50% 10%;
-  justify-items:center;
+  justify-items: center;
   gap: 20px;
   width: 80%;
 }
@@ -291,7 +291,7 @@ background-color: #bb3e81;
   padding: 7px;
   font-size: 15px;
 }
-.contact-email{
+.contact-email {
   grid-column: 1 / span 2;
   width: 100%;
 }
@@ -303,7 +303,7 @@ background-color: #bb3e81;
   font-size: 15px;
 }
 
-.contact-comment{
+.contact-comment {
   grid-column: 1 / span 2;
   width: 100%;
   height: 100%;
